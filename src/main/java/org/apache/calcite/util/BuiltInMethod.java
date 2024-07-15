@@ -146,7 +146,8 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 public enum BuiltInMethod {
 
-  Timestamp_INTEGER(CurrentTimeFn.class,"add",Timestamp.class, Integer.class),
+
+  TIMESTAMP_INTEGER(CurrentTimeFn.class,"add",Timestamp.class, Integer.class),
   QUERYABLE_SELECT(Queryable.class, "select", FunctionExpression.class),
   QUERYABLE_AS_ENUMERABLE(Queryable.class, "asEnumerable"),
   QUERYABLE_TABLE_AS_QUERYABLE(QueryableTable.class, "asQueryable",
