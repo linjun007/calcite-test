@@ -421,7 +421,7 @@ import org.apache.calcite.sql.validate.SqlUserDefinedFunction;
 import org.apache.calcite.sql.validate.SqlUserDefinedTableFunction;
 import org.apache.calcite.sql.validate.SqlUserDefinedTableMacro;
 import org.apache.calcite.util.BuiltInMethod;
-import static org.apache.calcite.util.BuiltInMethod.Timestamp_INTEGER;
+import static org.apache.calcite.util.BuiltInMethod.TIMESTAMP_INTEGER;
 import org.apache.calcite.util.Util;
 import org.checkerframework.checker.nullness.qual.Nullable;
 
@@ -3746,7 +3746,7 @@ public class RexImpTable {
                         case PLUS:
                             switch (typeName) {
                                 case TIMESTAMP:
-                                    return Expressions.call(Timestamp_INTEGER.method,
+                                    return Expressions.call(TIMESTAMP_INTEGER.method,
                                             trop0, trop1);
                             }
                             return null;
