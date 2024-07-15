@@ -110,7 +110,7 @@ public class Test {
         try {
             init();
             String sql = "select cast([12,23,23,67,78,89,90,null,NAME3] AS varchar)," +
-                    " cast(0 AS BOOL) ,(CURRENTTIME() +1)" +
+                    " cast(0 AS BOOL),cast(1 AS BOOL),cast(0 AS BOOLEAN),cast(1 AS BOOLEAN) ,(CURRENTTIME() +1)" +
                     "  from TEST_CSV.TEST ";
             ResultSet resultSet = statement.executeQuery(sql);
             ResultSetPrinter.printResultSet(resultSet);
