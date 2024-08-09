@@ -5,19 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-/**
- * 使用自定义的 csv 源，查询数据
- * 贵公司这套测试题非常有意思,我对calcite有着非常浓厚的兴趣，平时有时间也会阅读集成calcite相关框架的源码积累calcite，由于时间的原因考试题的有些不是最佳解答方式
- * 希望能加入贵公司专注做calcite相关开发 谢谢～
- * 语法文来自开源 calcite-1.35.0
- * 我的博客：
-     * https://blog.csdn.net/linjunjunjun/article/details/124831731?spm=1001.2014.3001.5501
-     * https://blog.csdn.net/linjunjunjun/article/details/124831612?spm=1001.2014.3001.5501
-     * https://blog.csdn.net/linjunjunjun/article/details/123432245?spm=1001.2014.3001.5501
-     *
-     * https://juejin.cn/user/1697301685870103/posts
- *
- */
+
 public class Test {
 
     private Connection connection = null;
